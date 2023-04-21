@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+<title>Alexandra Tri - Realtor: Contact me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/final/logo.png" alt="logo">
+        <div class="name">
+            <h1>Alexandra Tri</h1>
+            <h2>An Independent Realtor</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="menu" href="availableProperties.html">Properties for Sale</a>
+                    <div class="submenu">
+                        <a href="propertyListing1.html">House at Dufferin St - Centre St</a>
+                        <a href="propertyListing2..html">Condo at Promenade Cir</a>
+                        <a href="propertyListing3.html">Appartment at Yonge St - Cummer Ave</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="siteMap.html">Site Map and Credits</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <h3>Here you can leave your feedback or contact me</h3>
+            <form action="mailto:ulyajulia@gmail.com" method="post">
+                <p class="caption">Contact me</p>
+                <fieldset id="contactForm">
+                    <div class="label=input">
+                        <label for="firstName">First name:</label>
+                        <input id="firstName" type="text" placeholder="Julia" required>
+                    </div>
+                    <div class="label-input">
+                        <label for="lastName">Last name:</label>
+                        <input id="lastName" type="text" placeholder="Chugunova">
+                    </div>
+                    <div class="label-input">
+                        <label for="phoneNumber">Phone number:</label>
+                        <input id="phoneNumber" type="tel" placeholder="+1 (123) 456 7891" required>
+                    </div>
+                    <div class="label-input">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="email@email.com" required>
+                    </div>
+
+                    <div class="choices">
+                        <p>Preferred contact method</p>
+                        <div class="choice">
+                            <input id="phonePreference" name="contactPreference" type="radio" value="ByPhone">
+                            <label for="phonePreference">Phone</label>
+                        </div>
+                        
+                        <div class="choice">
+                            <input id="emailPreference" name="contactPreference" type="radio" value="ByEmail">
+                            <label for="emailPreference">Email</label>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="choices">
+                        <p>Type of property:</p>
+                        <div class="choice">
+                            <input id="house" name="propertyPreference" type="radio" value="house">
+                            <label for="house">House</label>
+                        </div>
+                        <div class="choice">
+                            <input id="condo" name="propertyPreference" type="radio" value="condo">
+                            <label for="condo">Condo</label>
+                        </div>
+                        <div class="choice">
+                            <input id="apt" name="propertyPreference" type="radio" value="apt">
+                            <label for="apt">Apartment</label>
+                        </div>
+                    </div>
+
+                    <div class="label-input">
+                        <label for="beds">Number of bedrooms</label>
+                        <input id="beds" type="number" min="1" max="10" step="1">
+                    </div>
+
+                    <div class="label-input">
+                        <label for="baths">Number of bathrooms</label>
+                        <input id="baths" type="number" min="1" max="10">
+                    </div>
+
+                    <div class="label-input">
+                        <label for="price">Price Range</label>
+                        <input id="price" type="number" min="100000">
+                    </div>
+
+                    <div class="commentForm">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" placeholder="Leave your comment here.."></textarea>
+                    </div>
+
+
+                    <div class="submit-reset">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear Form">
+                    </div>
+                </fieldset>
+            </form>
+
+            <form action="mailto:ulyajulia#gmail.com" method="post">
+                <p class="caption">Leave a feedback to improve my work</p>
+                <fieldset id="feedbackForm">
+
+                    <div class="choices">
+                        <p>Would you recommend me to your friends?</p>
+                        <div class="choice">
+                            <input id="definetelyNo" type="radio" name="recommendation" value="definetelyNo">
+                            <label for="definetelyNo">Definetely No</label>
+                        </div>
+                        <div class="choice">
+                            <input id="maybe" type="radio" name="recommendation" value="maybe">
+                            <label for="maybe">More likely</label>
+                        </div>
+                        <div class="choice">
+                            <input id="definetelyYes" type="radio" name="recommendation" value="definetelyYes">
+                            <label for="definetelyYes">Definetely Yes</label>
+                        </div>
+                    </div>
+
+                    <div class="choices">
+                        <p>What services did you use?</p>
+                        <div class="choice">
+                            <input type="checkbox" id="sell" name="sell" value="sell">
+                            <label for="sell">Property sale</label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox" id="buy" name="buy" value="buy">
+                            <label for="buy">Buy a property</label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox" id="estimation" name="estimation" value="estimation">
+                            <label for="estimation">Property estimation</label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox" id="rent" name="rent" value="rent">
+                            <label for="rent">Rent a place</label>
+                        </div>
+                        <div class="choice">
+                            <input type="checkbox" id="rentout" name="rentout" value="rentout">
+                            <label for="rentout">Rent out a place</label>
+                        </div>
+                    </div>
+
+                    <label for="feedback">Feedback</label>
+                    <textarea id="feedback" placeholder="Leave your feeddback here.."></textarea>
+                    <div class="submit-reset">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear Form">
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Alexandra Tri. Real Estate Agent. Toronto</p>
+        <div class="links">
+            <a href="mailto:alexandratri@email.com">alexandratri@email.com</a>
+            <a href="tel:11234567891">+1 (123) 456 78 91</a>
+        </div>
+    </footer>
+</body>
+</html>
